@@ -1,0 +1,51 @@
+body {
+    display:flex;
+    align-items: center;
+    background: #37474F;
+    font-family: monospace;
+    color: #cfd8dc;
+    justify-content: center;
+    font-size: 15px;
+  }
+  
+  .message-box {
+    text-align:left;
+  }
+  
+  a {
+    color: azure;
+  }
+  
+  .field {
+    margin: 10px;
+  }
+  
+  input {
+    font-family: monospace;
+    font-size: 15px;
+    border: none;
+    background: #1c232636;
+    color: #CFD8DC;
+    padding: 7px;
+    border: #4c5a61 solid 2px;
+    width: 70px;
+    align-self : center;
+  }
+  form input[type="text"] {
+    text-transform: lowercase;
+}
+  .submit-btn {
+    width: 50%
+  }
+  
+  .title {
+    margin: 10px 0px 20px 10px
+  }
+  
+  #error-message {
+    color: #E91E63;
+    display: block;
+    margin: 10px;
+    font-size: large;
+    max-width: fit-content;
+  }

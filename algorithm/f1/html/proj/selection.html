@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sorting Visualizer</title>
+
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+
+    <header>
+        <nav>
+            <div class="array-inputs">
+                
+                <p>Size of the array:</p>
+                <input id="a_size" type="range" min=20 max=150 step=1 value=30>
+                <p>Speed of the algorithm:</p>
+                <input id="a_speed" type="range" min=1 max=5     step=1 value=3>
+                <button id="a_generate">Generate New Array!</button>
+                <button id="custom_number">Enter numbers</button>
+                
+            </div>
+
+            <div class="header_right">
+                <p class="nav-heading">Sorting visualizer</p>
+      
+               
+                <div class="algos">
+                    <p class="nd">Selection sort</p>
+                    <button onclick="Selection_sort()">start</button>
+                    <button onclick="goBack()">Go to Home</button>
+                </div>
+            </div>
+
+        </nav>
+    </header>
+
+    <section>
+
+        <div id="Info_Cont1">
+            <p></p>
+            
+        </div>
+
+        <div id="array_container">
+            
+        </div>
+
+        <div id="Info_Cont2">
+            <p id="test"></p>
+            
+        </div>
+
+    </section>
+
+    <footer>
+<h2><center>Description</center></h4><br><p class="des" >
+    Selection sort is a simple sorting algorithm. This sorting algorithm is an in-place comparison-based algorithm in which the list is divided into two parts, the sorted part at the left end and the unsorted part at the right end. Initially, the sorted part is empty and the unsorted part is the entire list.
+
+The smallest element is selected from the unsorted array and swapped with the leftmost element, and that element becomes a part of the sorted array. This process continues moving unsorted array boundary by one element to the right.
+ <br><br><a href="https://en.wikipedia.org/wiki/Selection_sort"> wikipedia </a>
+
+
+</p> <br>
+   <h2><center></center></h4><br><p class="des" >
+   <a href="css/style.css.map" download>a</a> 
+
+
+</p> 
+</footer>
+    
+
+    <script src="./scripts/main.js"></script>   <!--This should be at the end of body and should be loaded before sorts.js-->
+    <script src="./scripts/visualizations.js"></script>  <!--This should be loaded after main.js-->
+
+    <script src="./scripts/bubble_sort.js"></script>
+    <script src="./scripts/selection_sort.js"></script>
+    <script src="./scripts/insertion_sort.js"></script>
+    <script src="./scripts/merge_sort.js"></script>
+    <script src="./scripts/quick_sort.js"></script>
+    <script src="./scripts/heap_sort.js"></script>
+</body>
+
+
+</html>

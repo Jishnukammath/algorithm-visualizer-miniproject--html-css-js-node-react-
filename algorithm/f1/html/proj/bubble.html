@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sorting Visualizer</title>
+
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+
+    <header>
+        <nav>
+            <div class="array-inputs">
+                
+                <p>Size of the array:</p>
+                <input id="a_size" type="range" min=10 max=40 step=1 value=25>
+                <p>Speed of the algorithm:</p>
+                <input id="a_speed" type="range" min=1 max=5     step=1 value=3>
+                <button id="a_generate">Generate New Array!</button>
+                <button id="custom_number">Enter numbers</button>
+                
+            </div>
+
+            <div class="header_right">
+                <p class="nav-heading">Sorting visualizer</p>
+      
+               
+                <div class="algos">
+                    <p class="nd">Bubble sort</p>
+                    <button onclick="Bubble()">start</button>
+                    <button onclick="goBack()">Go to Home</button>
+
+  
+                </div>
+            </div>
+
+        </nav>
+    </header>
+
+    <section>
+
+        <div id="Info_Cont1">
+            <p></p>
+            
+        </div>
+
+        <div id="array_container">
+            
+        </div>
+
+        <div id="Info_Cont2">
+            <p id="test"></p>
+            
+        </div>
+
+    </section>
+
+    <footer>
+<h2><center>Description</center></h4><br><p class="des" >
+    <h2>
+    Bubble sort, sometimes referred to as sinking sort, is a simple sorting algorithm that repeatedly steps through the list, compares adjacent elements and swaps them if they are in the wrong order. The pass through the list is repeated until the list is sorted. The algorithm, which is a comparison sort, is named for the way smaller or larger elements "bubble" to the top of the list.
+
+This simple algorithm performs poorly in real world use and is used primarily as an educational tool. More efficient algorithms such as quicksort, timsort, or merge sort are used by the sorting libraries built into popular programming languages such as Python and Java.
+<br><br></p></h2> <p><a href="https://en.wikipedia.org/wiki/Bubble_sort"> wikipedia </a> </p> <br>
+   <h2><center></center></h4><br><p class="des" >
+   <!-- <a href="css/style.css.map" download>a</a>  -->
+
+
+</p> 
+</footer>
+    
+
+    <script src="./scripts/main.js"></script>   <!--This should be at the end of body and should be loaded before sorts.js-->
+    <script src="./scripts/visualizations.js"></script>  <!--This should be loaded after main.js-->
+
+    <script src="./scripts/bubble_sort.js"></script>
+    <script src="./scripts/selection_sort.js"></script>
+    <script src="./scripts/insertion_sort.js"></script>
+    <script src="./scripts/merge_sort.js"></script>
+    <script src="./scripts/quick_sort.js"></script>
+    <script src="./scripts/heap_sort.js"></script>
+</body>
+
+
+</html>
